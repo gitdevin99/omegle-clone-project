@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const MainChatInterface = () => {
   return (
@@ -13,18 +14,18 @@ const MainChatInterface = () => {
       </h2>
 
       <p className="mb-4 text-sm leading-relaxed text-text-secondary md:text-base">
-        Omegle (oh`meg`ull) is a great way to meet new friends. When you use Omegle, you are paired randomly with another person to talk one-on-one. If you prefer, you can add your interests and you’ll be randomly paired with someone who selected some of the same interests. To help you stay safe, chats are anonymous unless you tell someone who you are (not recommended!), and you can stop a chat at any time. See our{' '}
+        Omegle (oh`meg`ull) is a great way to meet new friends. When you use Omegle, you are paired randomly with another person to talk one-on-one. If you prefer, you can add your interests and you'll be randomly paired with someone who selected some of the same interests. To help you stay safe, chats are anonymous unless you tell someone who you are (not recommended!), and you can stop a chat at any time. See our{' '}
         <a href="https://www.omegle.fun/teams.html" className="text-link hover:underline">
           Terms of Service
         </a> and{' '}
         <a href="https://www.omegle.fun/community.html" className="text-link hover:underline">
           Community Guidelines
-        </a> for more info about the do’s and don’ts in using Omegle. Omegle video chat is moderated but no moderation is perfect. Users are solely responsible for their behavior while using Omegle.
+        </a> for more info about the do's and don'ts in using Omegle. Omegle video chat is moderated but no moderation is perfect. Users are solely responsible for their behavior while using Omegle.
       </p>
 
       <div className="mb-4 text-sm leading-relaxed text-text-secondary">
         <span className="font-bold text-text-primary">YOU MUST BE 18 OR OLDER TO USE OMEGLE.</span>
-        <span> See Omegle’s <a href="https://www.omegle.fun/teams.html" className="text-link hover:underline">Terms of Service</a> for more info. Parental control protections that may assist parents are commercially available and you can find more info at <a href="https://www.connectsafely.org/controls/" className="text-link hover:underline">https://www.connectsafely.org/controls/</a> as well as other sites.</span>
+        <span> See Omegle's <a href="https://www.omegle.fun/teams.html" className="text-link hover:underline">Terms of Service</a> for more info. Parental control protections that may assist parents are commercially available and you can find more info at <a href="https://www.connectsafely.org/controls/" className="text-link hover:underline">https://www.connectsafely.org/controls/</a> as well as other sites.</span>
       </div>
 
       <div className="mb-4 flex items-center rounded-md bg-muted p-2 text-sm text-text-secondary">
@@ -46,9 +47,11 @@ const MainChatInterface = () => {
         <h3 className="mb-2 text-xl font-semibold text-text-primary">
           Start chatting:
         </h3>
-        <button className="w-full rounded-md bg-primary px-12 py-3 text-lg font-semibold text-primary-foreground shadow-md transition-transform hover:scale-105 md:w-auto">
-          Video
-        </button>
+        <Link href="/video">
+          <button className="w-full rounded-md bg-primary px-12 py-3 text-lg font-semibold text-primary-foreground shadow-md transition-transform hover:scale-105 md:w-auto">
+            Video
+          </button>
+        </Link>
       </div>
     </div>
   );
